@@ -1,7 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyVsMvc.Mvc", "NancyVsMvc.Mvc\NancyVsMvc.Mvc.csproj", "{08AEB48C-2876-4317-8650-D69E2B7A8EBB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08AEB48C-2876-4317-8650-D69E2B7A8EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AEB48C-2876-4317-8650-D69E2B7A8EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AEB48C-2876-4317-8650-D69E2B7A8EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AEB48C-2876-4317-8650-D69E2B7A8EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
