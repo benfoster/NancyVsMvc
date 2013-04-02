@@ -1,8 +1,4 @@
 ﻿using Nancy;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace NancyVsMvc.Nancy.Modules
 {
@@ -12,7 +8,9 @@ namespace NancyVsMvc.Nancy.Modules
         {
             Get["/"] = _ =>
             {
-                return View["home", new { WelcomeMessage = "Welcome to Nancy!" }];
+                dynamic viewBag = new DynamicDictionary();
+                viewBag.WelcomeMessage = "Welcome to Nancy!";
+                return View["home", viewBag];
             };
         }
     }
