@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,10 +65,28 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="_root\apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="_root\apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="_root\apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="_root\apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="_root\apple-touch-icon-precomposed.png" />
+    <Content Include="_root\apple-touch-icon.png" />
+    <Content Include="Assets\css\main.css" />
+    <Content Include="Assets\css\normalize.css" />
+    <Content Include="Assets\css\normalize.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="_root\humans.txt" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\lib\jquery-1.9.1.min.js" />
+    <Content Include="Assets\js\lib\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="_root\robots.txt" />
     <Content Include="Views\Home.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Custom404Handler.cs" />
     <Compile Include="Modules\HomeModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,6 +99,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -104,6 +125,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
