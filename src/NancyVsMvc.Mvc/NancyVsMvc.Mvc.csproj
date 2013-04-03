@@ -105,7 +105,23 @@
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Content Include="404.html" />
+    <Content Include="apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="Assets\css\main.css" />
+    <Content Include="Assets\css\normalize.css" />
+    <Content Include="Assets\css\normalize.min.css" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="humans.txt" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\lib\jquery-1.9.1.min.js" />
+    <Content Include="Assets\js\lib\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="robots.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
