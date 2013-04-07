@@ -30,8 +30,7 @@ namespace NancyVsMvc.Nancy
 
         public bool HandlesStatusCode(HttpStatusCode statusCode, NancyContext context)
         {
-            return statusCode == HttpStatusCode.NotFound
-                && context.Request.Headers.Accept.Any(x => x.Item1 == "text/html");
+            return statusCode == HttpStatusCode.NotFound;
         }
     }
 }
